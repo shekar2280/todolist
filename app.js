@@ -1,10 +1,14 @@
 //jshint esversion:6
 
+
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const _ = require("lodash");
 
+require('dotenv').config();
+console.log(process.env.URI);
+  
 const app = express();
 
 app.set("view engine", "ejs");
@@ -12,7 +16,7 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://admin:Soma2024@cluster0.aplbnwq.mongodb.net/todolistDB");
+mongoose.connect(process.env.URI);
 
 const itemsSchema = new mongoose.Schema({
   name: "String",
