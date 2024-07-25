@@ -7,7 +7,7 @@ const mongoose = require("mongoose");
 const _ = require("lodash");
 
 require('dotenv').config();
-console.log(process.env.URI);
+
   
 const app = express();
 
