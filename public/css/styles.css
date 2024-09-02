@@ -1,13 +1,12 @@
 html {
-  background-color: #E4E9FD;
-  background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
+  background-image: url("https://cdn.vectorstock.com/i/1000v/13/40/todo-list-seamless-pattern-universal-background-vector-7561340.jpg");
   min-height: 1000px;
   font-family: 'helvetica neue';
 }
 
 h1 {
   color: #fff;
-  padding: 10px;
+  padding: 3px;
 }
 
 .box {
@@ -19,8 +18,9 @@ h1 {
 }
 
 #heading {
-  background-color: #A683E3;
+  background-color: #81cdf9;
   text-align: center;
+  border: 2px solid black;
 }
 
 .item {
@@ -36,7 +36,7 @@ h1 {
 
 input:checked+p {
   text-decoration: line-through;
-  text-decoration-color: #A683E3;
+  text-decoration-color: black;
 }
 
 input[type="checkbox"] {
@@ -61,7 +61,7 @@ button {
   width: 50px;
   border-radius: 50%;
   border-color: transparent;
-  background-color: #A683E3;
+  background-color: #81cdf9;
   color: #fff;
   font-size: 30px;
   padding-bottom: 6px;
@@ -81,7 +81,7 @@ input[type="text"] {
 
 input[type="text"]:focus {
   outline: none;
-  box-shadow: inset 0 -3px 0 0 #A683E3;
+  box-shadow: inset 0 -3px 0 0 #81cdf9;
 }
 
 ::placeholder {
